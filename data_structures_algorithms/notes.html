@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>RAM & Storage Structures</h1>
+  <p>Source: <a href="https://neetcode.io/courses/dsa-for-beginners/1">Neetcode - DSA For Beginners: Lesson 1</a></p>
+  <ul>
+    <li>One integer is stored in 4 bytes (32 bits)</li>
+    <li>One ASCII string takes 1 byte (8 bits)</li>
+    <li>Arrays are always stored contiguously in RAM</li>
+    <li>RAM also stores "addresses" corresponding to the values stored</li>
+  </ul>
+  <h1>Big O</h1>
+  <p>Sources:<br> 
+  <a href="https://youtu.be/8hly31xKli0?t=2818">Algortihms & Data Structures Tutorial - FreeCodeCamp + Team Treehouse</a>
+  </p>
+  <ul>
+    <li><h4>TIME COMPLEXITY:</h4></li>
+    <li>About "Logarithmic Time Complexity":
+      <ul>
+        <li>Log n to the base 2 tells us, how many times should I divide n to reach 1</li>
+        <li>In Binary search, you divide the input range by 2 in every iteration and therefore its time complexity is O(Log n)</li>
+      </ul>
+    </li>
+    <li>The other types of complexity functions are: Linear O(n), Quadratic O(n^2) or Polynomial O(n^k), Quailinear O(n log n), Exponential O(x^n)</li>
+    <li>Examples for each:
+      <ul>
+        <li>Linear O(n) - </li>
+        <li>Logarithmic O(log n) - Binary Search</li>
+        <li>Quasilinear O(n log n) - Merge Sort Algorithm</li>
+        <li>Quadratic O(n^2) - Brute force search for finding duplicates</li>
+        <li>Exponential O(x^n) - Brute force search for cracking passwords / Travelling Salesman problem</li>
+      </ul>
+    </li>
+    <li><h4>SPACE COMPLEXITY:</h4></li>
+    <li>This is NOT about how big or small the input actually is. We only care about measuring the growth of space during function runtime!</li>
+  </ul>
+  <h1>Data Structures</h1>
+  <p>Sources:<br> 
+  <a href="https://youtu.be/8hly31xKli0?t=2818">Algortihms & Data Structures Tutorial - FreeCodeCamp + Team Treehouse</a>
+  </p>
+  <ul>
+    <li><b>Array:</b>
+      <ul>
+        <li>Usually, when you create an array, you must declare the size and type of elements stored in it.</li>
+        <li>And this is why arrays can be stored contiguously in RAM</li>
+        <li>Note that in python, lists are like arrays, but they allow any size and any type of elements. How they do it is:
+          <ul>
+            <li>The arrays are resized after pre-determined intervals (and not after every append)</li>
+            <li>Instead of storing the values in a list, python stores the references, therefore, any type of value can be added there</li>
+          </ul>
+        </li>
+        <li>Because they are stored contiguously and valkue type is known, calculating the address of a given index is just a formula. No traversal of the array is required to fetch</li>
+        <li>Fetching a value from an array is therefore O(1) time complexity</li>
+        <li>Inserting and deleting requires O(n) and after inserting or deleting, you have to shift every single element in the array</li>
+      </ul>
+    </li>
+    <li><b>Linked List:</b>
+      <ul>
+        <li><a href="#">Python implementation here</a></li>
+      </ul>
+    </li>
+  </ul>
+  <h1>Sort Algorithms</h1>
+  <p>Sources:<br> 
+  <a href="https://youtu.be/8hly31xKli0?t=2818">Algortihms & Data Structures Tutorial - FreeCodeCamp + Team Treehouse</a>
+  </p>
+  <ul>
+    <li></li>
+  </ul>
+</body>
+</html>
